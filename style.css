@@ -467,4 +467,84 @@ padding: 1.5em 3em;
 	.footer-distributed form button{
 		float: none;
 	}
+
+	@media (max-width: 768px) {
+    /* Ajuster la section Home */
+    .home {
+        flex-direction: column; /* Empile les éléments verticalement */
+        text-align: center; /* Centre le texte */
+    }
+
+    .container-texts,
+    .container-images {
+        width: 90%; /* Réduit la largeur pour s'adapter à l'écran */
+        margin: 1em auto; /* Ajoute de l'espacement */
+    }
+
+    .container-images img {
+        position: static; /* Supprime les positions absolues sur mobile */
+        width: 100%; /* Les images occupent toute la largeur */
+        height: auto;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0; /* Réduit l'espacement pour les petits écrans */
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Réduit les marges des liens */
+    }
+
+    /* Section About */
+    .about-content {
+        flex-direction: column; /* Réorganise les éléments en colonne */
+        align-items: center;
+    }
+
+    .about .container-texts,
+    .about .container-images {
+        width: 100%; /* Chaque élément occupe toute la largeur */
+        margin: 1em 0;
+    }
+
+    /* Section Compétences */
+    .competence-content {
+        flex-direction: column; /* Réorganise les compétences verticalement */
+        align-items: center;
+    }
+
+    .competences .container-icons div {
+        margin: 0.5em; /* Réduit l'espacement entre les icônes */
+    }
+
+    /* Footer */
+    .footer-distributed {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .footer-distributed form input,
+    .footer-distributed form textarea {
+        width: 100%; /* Champs de formulaire prennent toute la largeur */
+    }
+
+    .footer-distributed form button {
+        width: auto;
+    }
 }
+
+
